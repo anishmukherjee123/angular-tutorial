@@ -1,8 +1,10 @@
 <div *ngIf="hero">
   <h2>Selected Hero:</h2>
   <div><span>id: {{hero.id}}</span><br>
-    <label> name: 
-        <input [(ngModel)]="hero.name" placeholder="name">
+    <label> name:
+      <input [(ngModel)]="hero.name" placeholder="name">
     </label>
   </div>
 </div>
+<br>
+<button class="back" (click)="goBack()">Go Back</button>
